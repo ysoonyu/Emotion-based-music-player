@@ -1,0 +1,204 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: linear-gradient(135deg, #ff7e5f, #feb47b); /* Vibrant gradient background */
+    color: #333; /* Default text color */
+}
+
+/* Section Styles */
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+    position: relative; /* For positioning the logout button */
+}
+
+/* Logout Button */
+.logout-button {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background: #ff3d00; /* Vibrant color */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 15px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.logout-button:hover {
+    background: #ff6f61; /* Lighter color on hover */
+}
+
+/* Content Section */
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    max-width: 800px; /* Limit width for better appearance */
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.9); /* Light background for content */
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); /* Shadow for depth */
+}
+
+/* Profile Header Styles */
+.profile-header {
+    text-align: center;
+    padding: 20px;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.8); /* Light background for contrast */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    transition: all 0.3s ease; /* Smooth transition for hover effects */
+}
+
+.profile-header:hover {
+    transform: scale(1.02); /* Slightly enlarge on hover */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2); /* Increase shadow on hover */
+}
+
+/* Profile Image Styles */
+.profile-image {
+    border: 4px solid #ff6f61; /* Vibrant border for the profile image */
+    border-radius: 50%; /* Circular profile image */
+    width: 120px; /* Fixed width */
+    height: 120px; /* Fixed height */
+    object-fit: cover; /* Ensure the image covers the area */
+    transition: border-color 0.3s ease; /* Smooth transition for border color */
+}
+
+.profile-image:hover {
+    border-color: #ff3d00; /* Darker color on hover */
+}
+
+/* Quotes and Leaderboard Styles */
+.quotes, .leaderboard, .academic-calendar, .todo {
+    background: rgba(255, 255, 255, 0.9); /* Light background for sections */
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); /* Shadow for depth */
+    padding: 20px;
+    margin: 10px 0; /* Space between sections */
+    width: 100%; /* Full width */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.quotes:hover, .leaderboard:hover, .academic-calendar:hover, .todo:hover {
+    transform: translateY(-5px); /* Lift effect on hover */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2); /* Increase shadow on hover */
+}
+
+/* Form Styles */
+.form {
+    width: 100%;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.8); /* Slightly transparent background */
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); /* Shadow for depth */
+    transition: transform 0.3s ease; /* Smooth transition for hover effects */
+}
+
+.form:hover {
+    transform: scale(1.02); /* Slightly enlarge on hover */
+}
+
+/* Input Styles */
+.input {
+    margin-bottom: 15px;
+}
+
+.input span {
+    display: block;
+    margin-bottom: 5px;
+    color: #333; /* Darker text for better readability */
+}
+
+.input input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ff6f61; /* Vibrant border color */
+    border-radius: 5px;
+    transition: border-color 0.3s ease; /* Smooth transition for border color */
+}
+
+.input input:focus {
+    border-color: #ff3d00; /* Darker color on focus */
+    outline: none; /* Remove default outline */
+}
+
+/* Button Styles */
+input[type="submit"], .login-with-google-btn {
+    background: linear-gradient(90deg, #ff6f61, #ff3d00); /* Gradient background */
+    color: white;
+    border: none;
+    border-radius: 30px;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.2s ease; /* Added transform for scale effect */
+    width: 100%; /* Full width button */
+}
+
+input[type="submit"]:hover, .login-with-google-btn:hover {
+    background: linear-gradient(90deg, #ff3d00, #ff6f61); /* Reverse gradient on hover */
+    transform: scale(1.05); /* Slightly enlarge on hover */
+}
+
+/* Remember Me Styles */
+.remember-me {
+    margin-bottom: 20px;
+    color: #333; /* Darker text for better readability */
+}
+
+/* Text Link Styles */
+.text {
+    text-align: center;
+}
+
+.text a {
+    color: #ff6f61; /* Vibrant link color */
+    text-decoration: none; /* Remove underline */
+}
+
+.text a:hover {
+    text-decoration: underline; /* Underline on hover */
+}
+
+/* Social Media Icons */
+.social {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.social li {
+    list-style: none;
+    margin: 0 10px;
+}
+
+.social li img {
+    width: 30px; /* Adjust icon size */
+    height: 30px; /* Adjust icon size */
+    transition: transform 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.social li img:hover {
+    transform: scale(1.1); /* Slightly enlarge on hover */
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .form {
+        width: 90%; /* Full width on smaller screens */
+    }
+}
